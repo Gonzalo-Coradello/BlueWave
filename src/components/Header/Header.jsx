@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useHeaderLogic } from './headerLogic'
-import logo from '../../assets/images/logo-black.png'
+import logo from '../../assets/images/logo-white.png'
 
 const Header = () => {
   const navClass = useHeaderLogic()
@@ -10,9 +10,11 @@ const Header = () => {
   return (
     <header className='header' data-header>
       <div className='container'>
-        <Link to='/' className='logo w-[230px]'>
-          <img src={logo} className='max-w-[80px]' />
-        </Link>
+        <div className='w-[230px]'>
+          <Link to='/' className='logo w-fit rounded-[10px]'>
+            <img src={logo} className='max-w-[115px] py-2 px-8 ' />
+          </Link>
+        </div>
         <nav className={navClass} data-navbar>
           <div className='wrapper'>
             <button

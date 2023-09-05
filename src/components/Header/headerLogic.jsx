@@ -36,7 +36,7 @@ export const useHeaderLogic = () => {
     location.pathname === '/' && navbarButton?.classList?.add('invert-button')
 
     const headerActive = function () {
-      if (window.scrollY > 80) {
+      if (window.scrollY > 20) {
         header.classList.add('active')
         backTopBtn?.classList?.add('active')
         location.pathname === '/' &&
