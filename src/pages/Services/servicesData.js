@@ -24,6 +24,11 @@ export const servicesData = [
     content:
       'Nos encargamos del mantenimiento y actualización de tu sitio web para que puedas centrarte en hacer crecer tu negocio.',
   },
+  {
+    title: 'Asesoría en programación y Diseño de Páginas Web',
+    content:
+      'Nuestra experiencia en programación y diseño web está a tu disposición. Te brindamos asesoría personalizada para crear un sitio web atractivo y funcional que capte la atención de tu audiencia. Desde la idea hasta la implementación, estamos aquí para ayudarte a materializar tu visión en línea.',
+  },
 ]
 
 export const extraServices = [
@@ -31,11 +36,6 @@ export const extraServices = [
     title: 'Análisis de Páginas Web',
     content:
       '¿Quieres saber cómo mejorar tu presencia en línea? Nuestro análisis de páginas web te proporciona una evaluación detallada de tu sitio, identificando áreas de mejora para optimizar el rendimiento y la usabilidad. Descubre cómo puedes destacarte en la web.',
-  },
-  {
-    title: 'Asesoría en programación y Diseño de Páginas Web',
-    content:
-      'Nuestra experiencia en programación y diseño web está a tu disposición. Te brindamos asesoría personalizada para crear un sitio web atractivo y funcional que capte la atención de tu audiencia. Desde la idea hasta la implementación, estamos aquí para ayudarte a materializar tu visión en línea.',
   },
   {
     title: 'Servicios de Marketing',
