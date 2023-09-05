@@ -7,6 +7,8 @@ import Spinner from '../../components/Spinner'
 import { useState } from 'react'
 import PricesBackground from '../Prices/PricesBackground'
 import logo from '../../assets/images/logo-white.png'
+import WhatsappButton from '../../components/WhatsappButton'
+import { ScrollRestoration } from 'react-router-dom'
 
 const Contact = () => {
   const {
@@ -65,12 +67,16 @@ const Contact = () => {
 
   return (
     <>
+      <ScrollRestoration />
       <Header />
       <PricesBackground />
+      <WhatsappButton />
       <section className='section contact'>
         <div className='max-w-[1600px] mx-auto px-8'>
           <h2 className='h1 section-title text-center mb-3'>
-            <span className='has-before leading-[1.3]'>Contactanos</span>
+            <span className='has-before leading-[1.5] lg:leading-[1.3]'>
+              Contactanos
+            </span>
           </h2>
           <div className='bg-white max-w-[450px] lg:max-w-[780px] mx-auto rounded-3xl shadow-md lg:flex'>
             <form
@@ -134,10 +140,8 @@ const Contact = () => {
                   </button>
                 ) : (
                   <button
-                    className={`btn btn-primary !px-40 mt-4 ${
-                      isFormValid
-                        ? 'has-before has-after'
-                        : '!bg-gray-700 !hover:bg-gray-500 !text-white opacity-50'
+                    className={`btn btn-primary !px-32 !h-20 mt-4 ${
+                      isFormValid ? 'has-before has-after' : 'opacity-70'
                     }`}
                     type='submit'
                     disabled={!isFormValid}
