@@ -91,22 +91,42 @@ const Footer = () => {
         <div className='flex justify-center mt-4'>
           <ul className='flex space-x-4 '>
             <li>
-              <a href='#' className='text-white hover:text-blue-500'>
-                <i className='bx bxl-facebook'></i>
+              <a
+                href='#'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-white hover:text-red-500'
+              >
+                <i className='bx bxl-tiktok'></i>
               </a>
             </li>
             <li>
-              <a href='#' className='text-white hover:text-blue-500'>
+              <a
+                href='#'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-white hover:text-blue-500'
+              >
                 <i className='bx bxl-twitter'></i>
               </a>
             </li>
             <li>
-              <a href='#' className='text-white hover:text-red-500'>
+              <a
+                href='https://www.instagram.com/bluewave.webdesign/'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-white hover:text-red-500'
+              >
                 <i className='bx bxl-instagram'></i>
               </a>
             </li>
             <li>
-              <a href='#' className='text-white hover:text-blue-500'>
+              <a
+                href='#'
+                target='_blank'
+                rel='noopener noreferrer'
+                className='text-white hover:text-blue-500'
+              >
                 <i className='bx bxl-linkedin'></i>
               </a>
             </li>
