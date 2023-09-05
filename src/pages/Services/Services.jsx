@@ -42,7 +42,7 @@ const Services = () => {
                       width='30'
                       height='30'
                       loading='lazy'
-                      alt='service icon'
+                      alt='icon'
                     />
                   </div>
                   <h3 className='h4 text-[2.1rem] leading-[2.8rem] font-medium'>

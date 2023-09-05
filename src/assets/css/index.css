@@ -1014,22 +1014,43 @@ CONTACT
 
 */
 
-.input {
-  outline: 1px solid gray;
-  border-radius: 0.5rem;
-  padding-inline: 1rem;
+.input,
+.textarea {
+  outline: none !important;
+  max-width: 350px;
   padding-block: 1rem;
-  transition: all;
-  transition-duration: 300ms;
 }
 
-.input:focus {
-  outline: 1px solid black;
+.input {
+  border-bottom: 2px solid gray;
 }
 
-textarea {
+.textarea {
   resize: none;
-  outline: 0;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding-inline: 1rem;
+}
+
+.input:focus,
+.input:valid {
+  /* border-color: var(--light-blue); */
+  border-bottom-style: solid;
+  border-image: var(--blue-linear-gradient) 1;
+}
+
+.textarea:focus,
+.textarea:valid {
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, rgba(46, 83, 145, 1) 0%, rgba(89, 190, 234, 1) 100%)
+      border-box;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.contact-logo {
+  background-color: var(--dark-blue);
+  background-image: var(--blue-gradient);
 }
 
 /* SWEET ALERT / SWAL */

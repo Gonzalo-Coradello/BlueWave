@@ -5,6 +5,8 @@ import { useInput } from '../../hooks'
 import { sendEmail } from '../../services/email'
 import Spinner from '../../components/Spinner'
 import { useState } from 'react'
+import PricesBackground from '../Prices/PricesBackground'
+import logo from '../../assets/images/logo-white.png'
 
 const Contact = () => {
   const {
@@ -64,34 +66,25 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <section className='section contact bg-ghost'>
+      <PricesBackground />
+      <section className='section contact'>
         <div className='max-w-[1600px] mx-auto px-8'>
           <h2 className='h1 section-title text-center mb-3'>
             <span className='has-before leading-[1.3]'>Contactanos</span>
           </h2>
-          <div className='bg-white md:w-[550px] mx-auto px-8 md:px-32 py-24 rounded-3xl shadow-lg'>
-            {/* <div className='xl:flex justify-center'> */}
-            {/* <div className='basis-1/2 mx-auto w-full'> */}
-            {/* <div>
-                <h4 className='h2 text-center'>
-                  Hacemos <span className='has-before'>realidad</span>
-                </h4>
-                <h4 className='h2 text-center'>tus ideas.</h4>
-              </div> */}
-            {/* <div>
-                <img
-                  src={logo}
-                  className='w-full max-w-[400px] mx-auto rounded-3xl'
-                />
-              </div> */}
-            {/* </div> */}
+          <div className='bg-white max-w-[450px] lg:max-w-[780px] mx-auto rounded-3xl shadow-md lg:flex'>
             <form
-              className='max-w-[550px] mx-auto space-y-6'
+              className='mx-auto grid gap-6 justify-center px-8 md:px-32 py-24'
               onSubmit={handleSubmit}
             >
-              <div className='space-y-1'>
-                <label className='font-medium'>Email</label>
-                <input className='input' placeholder='Email' {...email} />
+              <div className='form-field'>
+                <label className=' font-medium'>Email</label>
+                <input
+                  className='input'
+                  required
+                  placeholder='Email'
+                  {...email}
+                />
                 {touchedEmail && email.value === '' ? (
                   <p className='text-center text-red-600 block pt-2'>
                     Todos los campos son requeridos
@@ -102,18 +95,28 @@ const Contact = () => {
                   </p>
                 ) : null}
               </div>
-              <div className='space-y-1'>
-                <label className='font-medium'>Asunto</label>
-                <input className='input' placeholder='Asunto' {...subject} />
+              <div className='form-field'>
+                <label className=' font-medium'>Asunto</label>
+                <input
+                  className='input'
+                  required
+                  placeholder='Asunto'
+                  {...subject}
+                />
                 {touchedSubject && subject.value === '' ? (
                   <p className='text-center text-red-600 block pt-2'>
                     Todos los campos son requeridos
                   </p>
                 ) : null}
               </div>
-              <div className='space-y-1'>
+              <div className='form-field space-y-1'>
                 <label className='font-medium'>Mensaje</label>
-                <textarea placeholder='Mensaje' {...body} className='input' />
+                <textarea
+                  placeholder='Mensaje'
+                  required
+                  {...body}
+                  className='textarea'
+                />
                 {touchedBody && body.value === '' ? (
                   <p className='text-center text-red-600 block pt-2'>
                     Todos los campos son requeridos
@@ -144,6 +147,9 @@ const Contact = () => {
                 )}
               </div>
             </form>
+            <div className='contact-logo hidden lg:grid min-w-[320px] justify-center items-center rounded-r-3xl'>
+              <img src={logo} alt='BlueWave logo' width={150} />
+            </div>
           </div>
         </div>
       </section>
