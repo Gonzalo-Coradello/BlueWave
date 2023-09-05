@@ -64,10 +64,10 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <section className='section bg-ghost'>
+      <section className='section contact bg-ghost'>
         <div className='max-w-[1600px] mx-auto px-8'>
           <h2 className='h1 section-title text-center mb-3'>
-            <span className='has-before'>Contactanos</span>
+            <span className='has-before leading-[1.3]'>Contactanos</span>
           </h2>
           <div className='bg-white md:w-[550px] mx-auto px-8 md:px-32 py-24 rounded-3xl shadow-lg'>
             {/* <div className='xl:flex justify-center'> */}

@@ -9,9 +9,9 @@ const Hero = () => {
         <div className='hero-right-band' />
         <div className='container'>
           <div className='hero-content'>
-            <h1 className='h1 hero-title'>
+            <h1 className='h1 hero-title leading-[1.3]'>
               Tu web perfecta: diseñada y construida por expertos en
-              <span className='has-before'>BlueWave.</span>
+              <span className='has-before leading-[1.3]'>BlueWave.</span>
             </h1>
             {/* <p className='hero-text'>
               En BlueWave, estamos dedicados a ayudarte a materializar tus ideas

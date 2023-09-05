@@ -56,6 +56,12 @@
     rgba(89, 190, 234, 1) 100%
   );
 
+  --blue-vertical-gradient: linear-gradient(
+    190deg,
+    rgba(46, 83, 145, 1) 40%,
+    rgba(89, 190, 234, 1) 110%
+  );
+
   /**
      * typography
      */
@@ -261,7 +267,8 @@ body {
   width: 100%;
   /* CHANGE */
   /* height: 6px; */
-  height: 4px;
+  height: 5px;
+  border-radius: 10px;
   /* background-color: var(--mustard); */
   background-color: var(--light-blue);
   background: var(--blue-linear-gradient);
@@ -636,7 +643,10 @@ body {
 
 .service-card {
   height: 100%;
-  background-color: var(--white);
+  /* background-color: var(--white); */
+  background-color: var(--dark-blue);
+  background-image: var(--blue-vertical-gradient);
+  color: white;
   padding-block-end: 40px;
   border-block-end: 3px solid transparent;
   box-shadow: var(--shadow-3);
@@ -648,6 +658,7 @@ body {
 }
 
 .service-card .card-icon {
+  filter: brightness(500%);
   max-width: max-content;
   padding: 15px;
   border-radius: var(--radius-8);
@@ -797,6 +808,7 @@ body {
 
 .footer {
   background-color: var(--raisin-black-1);
+  /* background-image: var(--blue-vertical-gradient); */
   color: var(--cool-gray);
 }
 
@@ -875,7 +887,7 @@ body {
   color: var(--white);
   font-size: var(--fs-8);
   padding-block: 40px;
-  border-block-start: 1px solid var(--onyx);
+  /* border-block-start: 1px solid var(--onyx); */
 }
 
 .copyright {
@@ -942,9 +954,14 @@ PRICES
 } */
 
 .price-card {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.7);
   -webkit-backdrop-filter: blur(6px);
   backdrop-filter: blur(6px);
+}
+
+.price-card li::marker {
+  color: var(--dark-blue);
+  content: '⬤ ';
 }
 
 /* .prices {
@@ -973,7 +990,7 @@ PRICES
   height: 750px;
   width: 750px;
   /* background-color: #2c5491; */
-  background-image: linear-gradient(185deg, #15b9de20, #2c549120 92%);
+  background-image: linear-gradient(185deg, #15b9de40, #2c549140 92%);
   border-radius: 100%;
   filter: blur(80px);
   animation-duration: 5s;

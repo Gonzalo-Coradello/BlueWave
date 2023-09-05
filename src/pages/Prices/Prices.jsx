@@ -26,15 +26,16 @@ const Prices = () => {
       <PricesBackground />
       <section className='section'>
         <div className='max-w-[1600px] mx-auto'>
-          <h2 className='h1 section-title text-center mb-3'>
-            Conocé nuestros <span className='has-before'>precios</span>
+          <h2 className='h1 font-medium section-title text-center mb-3'>
+            Conocé nuestros{' '}
+            <span className='has-before leading-[1.3]'>precios</span>
           </h2>
           <div className='grid grid-cols-[repeat(auto-fit,280px)] gap-16 justify-center'>
             {prices.map(pricePlan => (
               <div key={pricePlan.id} className='w-full'>
                 <div className='price-card grid h-[430px] backdrop-blur rounded-xl py-12 px-4 justify-center text-center shadow-lg'>
                   <div>
-                    <h4 className='relative leading-[1.8] self-start text-[2.15rem] font-bold h4'>
+                    <h4 className='relative leading-[2] self-start text-[2.5rem] font-bold h4'>
                       <span className='has-before'>{pricePlan.name}</span>
                     </h4>
                   </div>
@@ -43,7 +44,7 @@ const Prices = () => {
                       {pricePlan.features.map(feature => (
                         <li
                           key={feature.id}
-                          className='list-disc list-inside text-2xl'
+                          className='list-disc list-inside text-[1.65rem] leading-[2rem]'
                         >
                           {feature.name}
                         </li>
