@@ -12,6 +12,7 @@
   "dependencies": {
     "@ionic/react": "^7.2.1",
     "axios": "^1.5.0",
+    "boxicons": "^2.1.4",
     "ionicons": "^7.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

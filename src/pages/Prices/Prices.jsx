@@ -5,6 +5,8 @@ import PlanDetail from '../../components/PriceModal'
 
 import { prices } from './pricesData'
 import PricesBackground from './PricesBackground'
+import WhatsappButton from '../../components/WhatsappButton'
+import { ScrollRestoration } from 'react-router-dom'
 
 const Prices = () => {
   const [modalVisible, setModalVisible] = useState(false)
@@ -17,6 +19,7 @@ const Prices = () => {
 
   return (
     <>
+      <ScrollRestoration />
       <Header />
       <PlanDetail
         modalVisible={modalVisible}
@@ -24,11 +27,14 @@ const Prices = () => {
         planId={selectedPlan}
       />
       <PricesBackground />
+      <WhatsappButton />
       <section className='section'>
         <div className='max-w-[1600px] mx-auto'>
-          <h2 className='h1 font-medium section-title text-center mb-3'>
+          <h2 className='h1 font-medium section-title text-center mb-3 px-1'>
             Conocé nuestros{' '}
-            <span className='has-before leading-[1.3]'>precios</span>
+            <span className='has-before leading-[1.5] lg:leading-[1.3]'>
+              precios
+            </span>
           </h2>
           <div className='grid grid-cols-[repeat(auto-fit,280px)] gap-16 justify-center'>
             {prices.map(pricePlan => (
@@ -52,9 +58,12 @@ const Prices = () => {
                     </ul>
                   </div>
                   <div className='self-end'>
-                    <h4 className='font-bold text-3xl'>
+                    <h4 className='font-bold text-3xl flex w-fit mx-auto align-text-bottom'>
                       {typeof pricePlan.price === 'number' ? '$' : null}
                       {pricePlan.price}
+                      {typeof pricePlan.price === 'number' && (
+                        <span className='text-xl mt-2 ml-2 '>USD</span>
+                      )}
                     </h4>
                   </div>
                 </div>
