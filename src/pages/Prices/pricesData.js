@@ -16,12 +16,12 @@ export const prices = [
         description:
           'Implementación de certificado SSL para proteger la información del sitio.',
       },
-      {
-        id: 3,
-        name: 'Hosting por un año',
-        description:
-          'Hosting confiable y seguro, con dominio incluido, para asegurar el correcto funcionamiento de la página.',
-      },
+      // {
+      //   id: 3,
+      //   name: 'Hosting por un año',
+      //   description:
+      //     'Hosting confiable y seguro, con dominio incluido, para asegurar el correcto funcionamiento de la página.',
+      // },
       {
         id: 4,
         name: 'Integración Redes Sociales',
@@ -64,12 +64,12 @@ export const prices = [
         description:
           'Implementación de certificado SSL para garantizar la seguridad de los usuarios.',
       },
-      {
-        id: 3,
-        name: 'Hosting por un año',
-        description:
-          'Hosting confiable y de rendimiento para una experiencia de usuario superior.',
-      },
+      // {
+      //   id: 3,
+      //   name: 'Hosting por un año',
+      //   description:
+      //     'Hosting confiable y de rendimiento para una experiencia de usuario superior.',
+      // },
       {
         id: 4,
         name: 'Integración Redes Sociales',
@@ -125,12 +125,12 @@ export const prices = [
         description:
           'Implementación de certificado SSL con seguridad avanzada y protección contra amenazas.',
       },
-      {
-        id: 3,
-        name: 'Hosting por un año',
-        description:
-          'Hosting premium para una experiencia de usuario excepcional.',
-      },
+      // {
+      //   id: 3,
+      //   name: 'Hosting por un año',
+      //   description:
+      //     'Hosting premium para una experiencia de usuario excepcional.',
+      // },
       {
         id: 4,
         name: 'Integración Redes Sociales',
@@ -204,12 +204,12 @@ export const prices = [
         description:
           'Implementación de certificado SSL para garantizar la seguridad y privacidad de los usuarios.',
       },
-      {
-        id: 5,
-        name: 'Hosting Personalizado',
-        description:
-          'Hosting y recursos adecuados según la complejidad y tráfico esperado del proyecto.',
-      },
+      // {
+      //   id: 5,
+      //   name: 'Hosting Personalizado',
+      //   description:
+      //     'Hosting y recursos adecuados según la complejidad y tráfico esperado del proyecto.',
+      // },
       {
         id: 6,
         name: 'Plazo de entrega',
