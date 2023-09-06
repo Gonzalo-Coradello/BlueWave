@@ -92,7 +92,7 @@ const Footer = () => {
           <ul className='flex space-x-4 '>
             <li>
               <a
-                href='#'
+                href='https://www.tiktok.com/@bluewavewebdesign'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-white hover:text-red-500'
@@ -102,7 +102,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href='#'
+                href='https://twitter.com/BlueWaveweb'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-white hover:text-blue-500'
@@ -122,7 +122,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href='#'
+                href='https://www.linkedin.com/in/alejo-rodriguez-148959275'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='text-white hover:text-blue-500'
