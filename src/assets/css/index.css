@@ -928,6 +928,10 @@ body {
   color: var(--mustard);
 }
 
+.footer-contact > li > * {
+  font-family: var(--ff-dm-sans);
+}
+
 /*-----------------------------------*\
     #BACK TO TOP
   \*-----------------------------------*/
@@ -1512,7 +1516,7 @@ CONTACT
   }
 
   .navbar-list {
-    gap: 50px;
+    gap: 75px;
   }
 
   .hero-content {

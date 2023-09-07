@@ -6,7 +6,7 @@ export const prices = [
     features: [
       {
         id: 1,
-        name: 'Landing Page personalizada',
+        name: 'Landing Page básica',
         description:
           'Diseño y desarrollo de una Landing Page atractiva y funcional.',
       },
@@ -41,9 +41,19 @@ export const prices = [
           'Formulario de contacto para facilitar la comunicación con los visitantes.',
       },
       {
+        id: 3,
+        name: 'Galería de imágenes',
+        description: 'Creación de una galería de imágenes básica.',
+      },
+      {
         id: 7,
         name: 'Plazo de entrega',
         description: 'Entrega de la Landing Page en un plazo de 2 a 3 semanas.',
+      },
+      {
+        id: 8,
+        name: 'Hasta 3 páginas',
+        description: 'Hasta tres páginas de contenido.',
       },
     ],
   },
@@ -89,6 +99,11 @@ export const prices = [
           'Formulario de contacto avanzado con seguimiento de clientes potenciales.',
       },
       {
+        id: 3,
+        name: 'Galería de imágenes',
+        description: 'Creación de una galería de imágenes avanzada.',
+      },
+      {
         id: 7,
         name: 'Blog integrado',
         description:
@@ -105,6 +120,11 @@ export const prices = [
         name: 'Plazo de entrega',
         description:
           'Entrega de la Landing Page completa en un plazo de 3 a 4 semanas.',
+      },
+      {
+        id: 10,
+        name: 'Hasta 6 páginas',
+        description: 'Hasta seis páginas de contenido.',
       },
     ],
   },
@@ -150,6 +170,11 @@ export const prices = [
           'Formularios personalizados y avanzados para diferentes propósitos.',
       },
       {
+        id: 3,
+        name: 'Galería de imágenes',
+        description: 'Creación de una galería de imágenes avanzada.',
+      },
+      {
         id: 7,
         name: 'Blog avanzado',
         description:
@@ -172,6 +197,11 @@ export const prices = [
         name: 'Plazo de entrega',
         description:
           'Entrega de la Landing Page completa en un plazo de 5 a 6 semanas.',
+      },
+      {
+        id: 11,
+        name: 'Hasta 10 páginas',
+        description: 'Hasta diez páginas de contenido.',
       },
     ],
   },

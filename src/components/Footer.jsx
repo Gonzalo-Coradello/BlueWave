@@ -62,7 +62,7 @@ const Footer = () => {
           </div>
           <div className='text-center'>
             <h6 className='text-white uppercase font-bold'>Contactanos</h6>
-            <ul className='mt-4 grid gap-4 justify-center items-center'>
+            <ul className='mt-4 grid gap-4 justify-center items-center footer-contact'>
               <li className='bx bx-phone flex justify-center'>
                 <a
                   className='text-gray-300 ml-2 hover:text-white'
@@ -89,7 +89,7 @@ const Footer = () => {
       </div>
       <div className='container justify-center'>
         <div className='flex justify-center mt-4'>
-          <ul className='flex space-x-4 '>
+          <ul className='flex space-x-4'>
             <li>
               <a
                 href='https://www.tiktok.com/@bluewavewebdesign'
