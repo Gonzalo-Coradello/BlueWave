@@ -12,7 +12,7 @@ const Services = () => {
       <ScrollRestoration />
       <Header />
       <WhatsappButton />
-      <PricesBackground />
+      {/* <PricesBackground /> */}
       <section className='section service' id='service' aria-label='service'>
         <div className='container'>
           <div>
