@@ -657,9 +657,9 @@ body {
     #SERVICE
   \*-----------------------------------*/
 
-/* .service {
+.service {
   background-color: var(--ghost-white);
-} */
+}
 
 .service .section-title {
   margin-block: 30px 60px;
