@@ -746,7 +746,8 @@ body {
   transition: opacity 0.5s ease, max-height 1s ease;
 }
 
-.service-card.expanded .card-description {
+.service-card:hover .card-description,
+.service-card:focus-within .card-description {
   opacity: 1; /* Mostrar la descripción al pasar el cursor o enfocar */
   max-height: 300px; /* Altura máxima de la descripción */
 }
