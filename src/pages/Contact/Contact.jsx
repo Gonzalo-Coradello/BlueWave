@@ -22,6 +22,11 @@ const Contact = () => {
     ...subject
   } = useInput('text')
   const { reset: resetBody, touched: touchedBody, ...body } = useInput()
+  const {
+    reset: resetNumber,
+    touched: touchedNumber, //eslint-disable-line
+    ...number
+  } = useInput('tel')
 
   const [isLoading, setIsLoading] = useState(false)
 
@@ -29,10 +34,13 @@ const Contact = () => {
     e.preventDefault()
     setIsLoading(true)
 
+    // email, message, phoneNumber
+
     const data = {
-      to: email.value,
+      email: email.value,
       subject: subject.value,
-      body: body.value,
+      phoneNumber: number.value,
+      message: body.value,
     }
     // const data = {
     //   email: email.value,
@@ -40,11 +48,14 @@ const Contact = () => {
     //   body: body.value,
     // }
 
-    await sendEmail(data)
+    const response = await sendEmail(data)
+
+    console.log(response)
 
     resetEmail()
     resetSubject()
     resetBody()
+    resetNumber()
     Swal.fire({
       title: '¡Gracias por tu mensaje!',
       text: 'Nos vamos a poner en contacto pronto.',
@@ -84,16 +95,18 @@ const Contact = () => {
               onSubmit={handleSubmit}
             >
               <div className='form-field'>
-                <label className=' font-medium'>Email</label>
+                <label className=' font-medium flex gap-1'>
+                  Email <span className='text-red-600'>*</span>
+                </label>
                 <input
                   className='input'
                   required
-                  placeholder='Email'
+                  placeholder='ejemplo@email.com'
                   {...email}
                 />
                 {touchedEmail && email.value === '' ? (
                   <p className='text-center text-red-600 block pt-2'>
-                    Todos los campos son requeridos
+                    El email es requerido
                   </p>
                 ) : touchedEmail && !validateEmail(email.value) ? (
                   <p className='text-center text-red-600 block pt-2'>
@@ -102,37 +115,59 @@ const Contact = () => {
                 ) : null}
               </div>
               <div className='form-field'>
-                <label className=' font-medium'>Asunto</label>
+                <label className=' font-medium flex gap-1'>
+                  Asunto <span className='text-red-600'>*</span>
+                </label>
                 <input
                   className='input'
                   required
-                  placeholder='Asunto'
+                  placeholder='Página web para emprendimiento'
                   {...subject}
                 />
                 {touchedSubject && subject.value === '' ? (
                   <p className='text-center text-red-600 block pt-2'>
-                    Todos los campos son requeridos
+                    El asunto es requerido
+                  </p>
+                ) : null}
+              </div>
+              <div className='form-field'>
+                <label className=' font-medium flex gap-1'>
+                  Número de teléfono
+                </label>
+                <input
+                  className='input'
+                  required
+                  placeholder='12345678'
+                  {...number}
+                />
+                {touchedNumber &&
+                number.value !== '' &&
+                isNaN(Number(number.value)) ? (
+                  <p className='text-center text-red-600 block pt-2'>
+                    Este campo sólo admite números
                   </p>
                 ) : null}
               </div>
               <div className='form-field space-y-1'>
-                <label className='font-medium'>Mensaje</label>
+                <label className='font-medium flex gap-1'>
+                  Mensaje <span className='text-red-600'>*</span>
+                </label>
                 <textarea
-                  placeholder='Mensaje'
+                  placeholder='Escribe tu mensaje'
                   required
                   {...body}
                   className='textarea'
                 />
                 {touchedBody && body.value === '' ? (
                   <p className='text-center text-red-600 block pt-2'>
-                    Todos los campos son requeridos
+                    El mensaje es requerido
                   </p>
                 ) : null}
               </div>
               <div className='grid justify-center'>
                 {isLoading ? (
                   <button
-                    className={`btn btn-primary !px-40 mt-4 !block !pb-2 pt-2`}
+                    className={`btn btn-primary !px-32 !h-20 mt-4 !block !pb-2 pt-2`}
                     type='submit'
                     disabled
                   >

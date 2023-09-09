@@ -4,6 +4,7 @@ import Footer from '../../components/Footer'
 import WhatsappButton from '../../components/WhatsappButton'
 import ServiceCard from '../../components/ServiceCard'
 import { ScrollRestoration } from 'react-router-dom'
+import PricesBackground from '../Prices/PricesBackground'
 
 const Services = () => {
   return (
@@ -11,6 +12,7 @@ const Services = () => {
       <ScrollRestoration />
       <Header />
       <WhatsappButton />
+      <PricesBackground />
       <section className='section service' id='service' aria-label='service'>
         <div className='container'>
           <div>

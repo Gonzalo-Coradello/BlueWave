@@ -95,7 +95,7 @@ const Footer = () => {
                 href='https://www.tiktok.com/@bluewavewebdesign'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='text-white hover:text-red-500'
+                className='text-white hover:text-blue-500'
               >
                 <i className='bx bxl-tiktok'></i>
               </a>
@@ -115,7 +115,7 @@ const Footer = () => {
                 href='https://www.instagram.com/bluewave.webdesign/'
                 target='_blank'
                 rel='noopener noreferrer'
-                className='text-white hover:text-red-500'
+                className='text-white hover:text-blue-500'
               >
                 <i className='bx bxl-instagram'></i>
               </a>
