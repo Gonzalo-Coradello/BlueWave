@@ -18,9 +18,6 @@ const ServiceCard = ({ service, index }) => {
     <li
       onMouseEnter={() => handleMouseEnter(index)}
       onMouseLeave={handleMouseLeave}
-      onClick={() =>
-        setExpandedCardIndex(expandedCardIndex === index ? null : index)
-      }
     >
       <div
         className={`service-card ${
