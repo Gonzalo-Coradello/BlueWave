@@ -32,9 +32,9 @@ const ServiceCard = ({ service, index }) => {
           />
         </div>
         <h3 className='h4 text-[2.1rem] leading-[2.8rem] font-medium'>
-          <a href='#' className='card-title'>
-            {service.title}
-          </a>
+          <div className='card-title'>
+          {service.title}
+          </div>
         </h3>
         <p className='card-description mt-6 pt-4 border-t'>{service.content}</p>
       </div>
