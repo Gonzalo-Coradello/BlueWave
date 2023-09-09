@@ -12,10 +12,15 @@ const ServiceCard = ({ service, index }) => {
     setExpandedCardIndex(null)
   }
 
+  console.log(expandedCardIndex, index)
+
   return (
     <li
       onMouseEnter={() => handleMouseEnter(index)}
       onMouseLeave={handleMouseLeave}
+      onClick={() =>
+        setExpandedCardIndex(expandedCardIndex === index ? null : index)
+      }
     >
       <div
         className={`service-card ${
@@ -32,9 +37,7 @@ const ServiceCard = ({ service, index }) => {
           />
         </div>
         <h3 className='h4 text-[2.1rem] leading-[2.8rem] font-medium'>
-          <div className='card-title'>
-          {service.title}
-          </div>
+          <div className='card-title'>{service.title}</div>
         </h3>
         <p className='card-description mt-6 pt-4 border-t'>{service.content}</p>
       </div>
