@@ -10,16 +10,8 @@ const App = () => {
   return (
     <div>
       <ScrollRestoration />
-      {/* <Suspense */}
-      {/* fallback={ */}
-      {/* <div className='grid w-screen h-screen justify-center items-center text-center'> */}
-      {/* <h2>Loading...</h2> */}
-      {/* </div> */}
-      {/* } */}
-      {/* > */}
       <MainPage />
       <Bubbles />
-      {/* </Suspense> */}
     </div>
   )
 }

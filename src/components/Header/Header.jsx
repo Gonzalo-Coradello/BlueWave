@@ -12,7 +12,11 @@ const Header = () => {
       <div className='container'>
         <div className='w-[230px]'>
           <Link to='/' className='logo w-fit rounded-[10px]'>
-            <img src={logo} className='max-w-[115px] py-2 px-8 ' />
+            <img
+              src={logo}
+              className='max-w-[115px] py-2 px-8'
+              alt='BlueWave logo'
+            />
           </Link>
         </div>
         <nav className={navClass} data-navbar>
