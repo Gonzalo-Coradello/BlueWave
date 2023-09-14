@@ -34,23 +34,14 @@ const Contact = () => {
     e.preventDefault()
     setIsLoading(true)
 
-    // email, message, phoneNumber
-
     const data = {
       email: email.value,
       subject: subject.value,
       phoneNumber: number.value,
       message: body.value,
     }
-    // const data = {
-    //   email: email.value,
-    //   subject: subject.value,
-    //   body: body.value,
-    // }
 
-    const response = await sendEmail(data)
-
-    console.log(response)
+    await sendEmail(data)
 
     resetEmail()
     resetSubject()
@@ -59,8 +50,7 @@ const Contact = () => {
     Swal.fire({
       title: '¡Gracias por tu mensaje!',
       text: 'Nos vamos a poner en contacto pronto.',
-      icon: 'success',
-      confirmButtonColor: 'var(--dark-blue)',
+      confirmButtonColor: '#FFFFFF',
       confirmButtonText: 'Confirmar',
     })
 
@@ -134,12 +124,7 @@ const Contact = () => {
                 <label className=' font-medium flex gap-1'>
                   Número de teléfono
                 </label>
-                <input
-                  className='input'
-                  required
-                  placeholder='12345678'
-                  {...number}
-                />
+                <input className='input' placeholder='12345678' {...number} />
                 {touchedNumber &&
                 number.value !== '' &&
                 isNaN(Number(number.value)) ? (

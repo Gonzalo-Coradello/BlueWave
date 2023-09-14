@@ -1087,10 +1087,67 @@ CONTACT
   font-size: 1.4rem !important;
 }
 
+.swal2-popup {
+  position: relative;
+  min-height: 250px;
+  padding-top: 4rem;
+  background-color: var(--dark-blue);
+  background-image: var(--blue-gradient);
+  overflow: hidden;
+}
+
+.swal2-popup::after,
+.swal2-popup::before {
+  content: '';
+  position: absolute;
+  left: -100%;
+  min-width: 1350px;
+  min-height: 1350px;
+  margin-bottom: 5rem;
+  background-color: #ffffff;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.swal2-popup::before {
+  bottom: 15vh;
+  border-radius: 45%;
+  animation-duration: 10s;
+}
+
+.swal2-popup::after {
+  bottom: 12vh;
+  opacity: 0.5;
+  border-radius: 47%;
+  animation-duration: 10s;
+}
+
+.swal2-title {
+  color: var(--raisin-black-1) !important;
+}
+
+.swal2-html-container {
+  color: #fff !important;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(0, 0) rotateZ(0deg);
+  }
+  50% {
+    transform: translate(0, -2%) rotateZ(180deg);
+  }
+  100% {
+    transform: translate(0, 0%) rotateZ(360deg);
+  }
+}
+
 .swal2-confirm {
   padding-inline: 2rem;
   outline: none;
   font-size: 12.5px !important;
+  color: var(--raisin-black-1) !important;
 }
 
 /* SPINNER */
